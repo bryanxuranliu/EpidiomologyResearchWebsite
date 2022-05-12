@@ -1,0 +1,71 @@
+<html> 
+	<head> 
+		<title> River of Vitality </title>
+	</head>
+	<body>
+		<h1> River of Vitality </h1>
+		<p> <b> The Center for Epidemiology and Biostatistics Research  </b> 
+	
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Research Articles')" id="defaultOpen">Research Articles</button>
+  <button class="tablinks" onclick="openCity(event, 'Calculators')">Calculators</button>
+  <button class="tablinks" onclick="openCity(event, 'Helpful Videos')">Helpful Videos</button>
+  <button class="tablinks" onclick="openCity(event, 'About Me')">About Me</button>
+</div>
+
+<div id="Research Articles" class="tabcontent">
+   <h3></h3>
+<p> </I> </p>
+
+
+</div>
+
+<div id="Calculators" class="tabcontent">
+  <h3>Disclaimer: calculators pertaining to recommended intake of X are not a substitute for the advise of a personal doctor or nutritionist. There is no way a single calculator can output values accurate enough for the general population. Always consult expert advise.</h3>
+	
+  <p> 
+	<br> <b> Body Mass Index Calculator </b> </br>
+	<fieldset>
+		<legend> BMI calculator </legend>
+		<label> height (inches): <br />
+		<input type = "text" name = "height" /> </label> <br/>
+		<label> weight (lbs): <br />
+		<input type = "text" name = "weight" /> </label> <br/>
+
+</p> 	
+</form>
+</div>
+
+<div id="Helpful Videos" class="tabcontent">
+  <h3>Some videos I made in case you need a refresher on learning some topics in biostatistics</h3>
+  <p> </p>
+</div>
+
+<div id="About Me" class="tabcontent">
+  <h3>Bryan</h3>
+  <p>
+     <img src="/Users/bliu48/Downloads/bryanliu.jpeg" alt="Bryan" width="256" height="192">
+  <p>I received my bachelor’s degree in 2022 at Cal Poly in San Luis Obispo, California. My field of research during undergrad was in math and statistics, but have a strong interest in its applications in medicine. In my free time I enjoy playing the violin/piano, lifting weights, taking photos with my camera, and driving around at 1:00 AM enjoying the view of the city lights. </p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+			 </p>
+	</body> 
+</html>  
